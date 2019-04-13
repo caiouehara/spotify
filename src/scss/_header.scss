@@ -8,7 +8,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 25vh;
+        height: 20vh;
         margin: 0 20%;
         &>:nth-child(1){
             height: 110px;
@@ -69,19 +69,28 @@ header{
                 color: $navDColor;
             }
             button {
-                color: green;
-
-                background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
+                margin: 10px;
                 padding: 15px 32px;
+                height: 7vh;
+                width: 20vw;
+                cursor: pointer;
+
+                background-color: rgba(76, 175, 79, 0.9); 
+                border: none;
+                color: rgba(255, 255, 255, 0.767);
                 font-size: 16px;
                 border-radius: 500px;
+                box-shadow: -4px 4px 54px -10px rgba(0,0,0,0.66);
+            }
+            button:hover{
+                transition: 0.5s;
+                background-color: rgba(76, 175, 79, 1); 
+                color: rgba(255, 255, 255, 1);
             }
         }
             div{
-                margin: 2vw 2vw 4vh 0;
-                padding: 0 0 5vh 0;
+                margin: 0.5vw 2vw 1vh 0;
+                padding: 0 0 1vh 0;
                 .motosRow{
                 display: flex;
                     img{
@@ -96,10 +105,32 @@ header{
                     }
                 }
             }
-        footer{
-            grid-area: footer;
-            
-        }
-    
     }
-}   
+    &>:nth-child(3){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: auto;
+            height: 8vh;
+            cursor: pointer;
+
+            animation-name: seta;   
+            animation-duration: 2.5s;
+            animation-delay: 0;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            @keyframes seta {
+                0%{
+                    padding-top: 0vh;
+                }
+                100%{
+                    padding-top: 4vh;
+                }
+            }
+        }
+    }
+}
+.cont{
+    
+}
