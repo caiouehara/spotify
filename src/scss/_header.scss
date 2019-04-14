@@ -29,6 +29,10 @@ header{
                 font-family: $fontDefault;
                 font-weight: bolder;
                 font-size: 14pt;
+                cursor: pointer;
+            }
+            p:hover{    
+                color: blue;
             }
         }
         &>:nth-child(4){
@@ -117,7 +121,7 @@ header{
 
             animation-name: seta;   
             animation-duration: 2.5s;
-            animation-delay: 0;
+            animation-delay: 0s;
             animation-direction: alternate-reverse;
             animation-iteration-count: infinite;
             @keyframes seta {
@@ -130,7 +134,4 @@ header{
             }
         }
     }
-}
-.cont{
-    
 }
