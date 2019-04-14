@@ -4,10 +4,10 @@
     align-items: center;
     flex-direction: column;
     height: 60vh;
-    background-color: aqua;
-
+    background-color: rgba(76,76,76,1);
+    background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 0%, rgba(71,71,71,0.99) 17%, rgba(0,0,0,0.96) 91%, rgba(19,19,19,0.96) 100%);
     h3{
-        color: black;
+        color: rgba(255, 255, 255, 0.87);
         font-size: 24pt;
         font-family: $fontDefault;
         margin: 5vh;
