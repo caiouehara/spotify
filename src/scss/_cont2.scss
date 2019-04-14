@@ -1,6 +1,18 @@
 .cont2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $fontDefault;
     h3{
-        font-family: $fontDefault;
-        
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        width: 40vw;
+        div{
+            p{  
+            }
+        }
     }
 }
