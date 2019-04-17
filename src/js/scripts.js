@@ -1,8 +1,14 @@
+const scrollButton = document.querySelector('.scrollButton img');
+const body = document.querySelector ('html body');
 
-const scrollButton = document.querySelector(".scrollButton img");
-const scrollPlace = document.querySelector('#cont1A');
+console.log(scrollButton);
 
 
-$(scrollButton).click(function(){
-    $(scrollPlace).slideDown(400,complete());
-  });
+scrollButton.onclick = function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    let n = $('html body').height();
+    body.animate({ scrollTop: 100 }, 50);
+};
+
